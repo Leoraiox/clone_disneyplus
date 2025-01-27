@@ -25,12 +25,12 @@
             <ul class="hero__content__combos">
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus.png" alt="disney+ - star+ - combos+">
-                    <button>Assine Agora</button>
+                    <button class="button">Assine Agora</button>
                     <span class="text">R$ 45,90/mês*</span>
                 </li>
                 <li class="hero__content__combos__combo">
                     <img src="./dist/images/logos/disney_star_plus_starzplay.png" alt="disney+ - star+ - combos+">
-                    <button>Assine Agora</button>
+                    <button class="button">Assine Agora</button>
                     <span class="text">R$ 55,90/mês*</span>
                 </li>
             </ul>
@@ -38,8 +38,112 @@
                 *O valor pode variar caso compre em outras plataformas.
             </p>
         </div>
-
-        </div>
     </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is--active">
+                Em breve
+            </button>
+            <button data-tab-button="populares" class="shows__tabs__button">
+                Mais pupolares
+            </button>
+            <button data-tab-button="star_plus" class="shows__tabs__button">
+                Mais no Star+
+            </button>
+        </nav>
+        <ul data-tab-id="em_breve" class="shows__list shows__list--is--active">
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/desencantada.jpg" alt="Desencantada">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/lobisomem.jpg" alt="Lobisomem">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/sem_limites.jpg" alt="Sem_limites">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/the_santa_clauses.jpg" alt="The_santa_clauses">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/em_breve/willow.jpg" alt="Willow">
+            </li>
+        </ul>
+        <ul data-tab-id="populares" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/obi_wan.jpg" alt="Obi Wan">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/bluey.jpg" alt="Bluey">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/cavaleira_da_lua.jpg" alt="Cavaleira_da_lua">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg" alt="O_incrivel_dr_pol">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/red.jpg" alt="Red">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_populares/tudo_igual_sqn.jpg" alt="Tudo_igual_sqn">
+            </li>
+        </ul>
+        <ul data-tab-id="star_plus" class="shows__list ">
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/libertadores.jpg" alt="libertadores">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="Belair">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="Nba">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/os_simpson.jpg" alt="Os_simpson">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/premier_league.jpg" alt="Premier_league">
+            </li>
+            <li class="shows__list__item">
+                <img src="./dist/images/mais_no_star_plus/the_kardashians.jpg" alt="The_kardashians">
+            </li>
+        </ul>
+    </section>
+    <section class="plans">
+        <h2 class="title--big">Escolha seu plano</h2>
+        <ul class="plans__list">
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disneyplus_underline.png" alt="Disney+">
+                <strong class="title--small">R$ 27,90*</strong>
+                <p class="text--big">
+                    Assine Disney Economia, aproveite canais de filmes e desenhos 24horas. Inicio dos sonhos filmes e aventuras. 
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_sm.png " alt="Disney+">
+                <strong class="title--small">R$ 45,90*</strong>
+                <p class="text--big">
+                    Assista a filmes, séries e desenhos animados da Disney, Pixar, Marvel, Star Wars e National Geographic.
+                </p>
+                <button class="button">Assine agora</button>
+            </li>
+            <li class="plans__list__item">
+                <img src="./dist/images/logos/disney_star_plus_starzplay_underline.png" alt="Disney+">
+                <strong class="title--small">R$ 55,90*</strong>
+                <p class="text--big">
+                    Plano Espedial Disney+, Pixar, Marvel, Star Wars, National Geographic e muito mais+. Assine o plano completo.
+                </p>
+                <button class="button ">Assine agora</button>
+            </li>
+        </ul>
+        <p class="text--small">
+            *O valor pode variar caso compre em outras plataformas.
+        </p>
+    </section>
+    <script src="./src/main.js"></script>
 </body>
 </html>
