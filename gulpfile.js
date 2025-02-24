@@ -4,7 +4,7 @@ const imagemin = require('gulp-imagemin');
 
 
 function styles() {
-    return gulp.src('./src/styles/*.scss')
+    return gulp.src('./src/styles/*.scss') // Inclui todos os arquivos SCSS em subpastas
         .pipe(sass({outputStyle: 'compressed' }))
         .pipe(gulp.dest('./dist/css'));
 }
@@ -18,5 +18,5 @@ function images() {
 exports.default = gulp.parallel(styles, images);
 
 exports.watch = function(){
-    gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
+    gulp.watch('./src/styles/*.scss', gulp.parallel(styles)); // Observa todos os arquivos SCSS em subpastas
 }

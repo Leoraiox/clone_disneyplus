@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Disney</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
     <header class="header">
         <div class="header__container">
-            <h1 >
+            <h1>
                 <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
             </h1>
             <ul class="header__links">
                 <li class="header__links__item">
-                    <a href="#" class="button">Assinar</a>
+                    <a href="#" class="button button--secondary">Assinar</a>
                 </li>
                 <li class="header__links__item">
-                    <a href="#" class="button">Entrar</a>
+                    <a href="#" class="button button--dark">Entrar</a>
                 </li>
             </ul>
         </div>
@@ -171,7 +172,10 @@
         </div>
     </section>
     <section class="image-text-section image-text-section--image-full-width">
-        <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        <picture>
+            <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png" type="image/png" />
+            <img src="./dist/images/fundo_rei_leao.png" alt="Rei Leão">
+        </picture>
         <div class="image-text-section__text_container image-text-section--image-full-width__text_container">
             <h2 class="title">
                 Baixe filmes e séries.
